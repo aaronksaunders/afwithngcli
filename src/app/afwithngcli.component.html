@@ -1,0 +1,11 @@
+<ul *ngFor="let item of projects | async">
+  <li class="text">
+    {{item.name}}
+  </li>
+  <p>
+    {{(item.metadata | async)?.moreData}}
+  </p>
+    <p>
+    {{(item.metadata | async)?.stockPrice}}
+  </p>
+</ul>
