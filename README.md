@@ -72,3 +72,11 @@ code for the UI looks something like this.
   </p>
 </ul>
 ```
+If you notice this code `(item.metadata | async)?.stockPrice`, we are using the elvis operator to make sure that the observable has some data in it before trying to access the properties `moreData` and `stockPrice`. I have to believe there is a cleaner way to code that up, but this is what I have for now. 
+
+Please provide feedback if you have any.
+
+###Additional Content & Links
+- [Firebase](https://www.firebase.com)
+- [AngularFire2 Documentation](https://angularfire2.com/api/)
+- [More Content and Samples on Firebase from my blog](http://www.clearlyinnovative.com/?s=firebase)
