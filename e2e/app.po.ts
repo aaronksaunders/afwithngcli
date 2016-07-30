@@ -4,6 +4,6 @@ export class AfwithngcliPage {
   }
 
   getParagraphText() {
-    return element(by.css('afwithngcli-app h1')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }

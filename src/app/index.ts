@@ -1,2 +1,2 @@
-export {environment} from './environment';
-export {AfwithngcliAppComponent} from './afwithngcli.component';
+export * from './environment';
+export * from './app.component';
