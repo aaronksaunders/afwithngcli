@@ -1,8 +1,13 @@
-<h1>
-  {{title}}
-</h1>
-<ul *ngFor="let item of items | async">
-  <li class="text">
-    {{item | json}}
-  </li>
-</ul>
+<md-list-item *ngFor="let item of items | async" style="margin:10px">
+
+  <md-card style="padding:10px">
+    <md-card-title>Create a profile</md-card-title>
+    <md-card-content class="secondary">
+      <pre>{{item | json}}</pre>
+    </md-card-content>
+    <md-card-actions align="end" style="padding:10px">
+      <button md-raised-button color="accent">POST</button>
+      <button md-raised-button color="accent">POST</button>
+    </md-card-actions>
+  </md-card>
+</md-list-item>

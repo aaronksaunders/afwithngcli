@@ -9,8 +9,9 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-  'firebase': 'vendor/firebase/firebase.js',
-  'angularfire2': 'vendor/angularfire2'
+  '@angular2-material': 'vendor/@angular2-material',
+  'angularfire2': 'vendor/angularfire2',
+  'firebase': 'vendor/firebase'
 };
 
 /** User packages configuration. */
@@ -18,8 +19,25 @@ const packages: any = {
   angularfire2: {
     defaultExtension: 'js',
     main: 'angularfire2.js'
-  }
+  },
+  'firebase': {main: 'firebase.js'}
 };
+
+const materialPkgs: string[] = [
+  'core',
+  'toolbar',
+  'icon',
+  'button',
+  'sidenav',
+  'list',
+  'card',
+  'input',
+];
+
+materialPkgs.forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = {main: `${pkg}.js`};
+});
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
