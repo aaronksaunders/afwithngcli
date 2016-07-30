@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Afwithngcli
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.10.
@@ -113,4 +113,4 @@ Please provide feedback if you have any.
 - [Firebase](https://www.firebase.com)
 - [AngularFire2 Documentation](https://angularfire2.com/api/)
 - [More Content and Samples on Firebase from my blog](http://www.clearlyinnovative.com/?s=firebase)
->>>>>>> a5141537fcbbb150d347df0ff7989e916d47569a
+
